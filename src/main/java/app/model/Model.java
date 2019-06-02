@@ -4,6 +4,7 @@ import app.entities.User;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.stream.Collectors;
 
 public class Model {
@@ -16,7 +17,7 @@ public class Model {
     }
 
     private Model() {
-        model = new ArrayList<>();
+        model = new CopyOnWriteArrayList<>();
     }
 
     public void add(User user) {

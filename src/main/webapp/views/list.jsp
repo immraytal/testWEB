@@ -23,7 +23,7 @@
             <h2>Users</h2>
         </div>
         <%
-            List<String> names = (List<String>) request.getAttribute("userNames");
+            List<String> names = (List<String>) request.getAttribute("users");
 
             if (names != null && !names.isEmpty()) {
                 out.println("<ui>");
@@ -37,7 +37,7 @@
 </div>
 
 <div>
-    <button onclick="location.href='/'">Back to main</button>
+    <button onclick="location.href='..'">Back to main</button>
 </div>
 </body>
 </html>

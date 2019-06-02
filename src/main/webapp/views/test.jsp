@@ -12,7 +12,8 @@
 </head>
 <body>
 <p>
-    <% new java.util.Date(); %>
+    <%= request.getParameter("name")%>
+
 </p>
 </body>
 </html>
